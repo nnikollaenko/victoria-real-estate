@@ -445,26 +445,53 @@ table.pricing td.comment{ color:var(--muted); font-size:13.5px; }
     <div class="section-body">
       <p>Два пакета — в&nbsp;зависимости от&nbsp;цели.</p>
 
-      <div class="pkg-grid" style="grid-template-columns:1fr 1fr;">
-        <div class="pkg-card">
-          <h4>Трафик и&nbsp;подписка</h4>
-          <div class="pkg-price">600 €<span style="font-size:14px;font-weight:500;color:var(--muted);">/мес</span></div>
-          <p>Настройка и&nbsp;ведение таргета — только на&nbsp;трафик и&nbsp;рост подписчиков.</p>
+      <div class="tab-switch">
+        <button data-tab="target-traffic" class="active">Трафик и&nbsp;подписка</button>
+        <button data-tab="target-full">Полноценный таргет</button>
+      </div>
+
+      <div data-tab-panel="target-traffic" class="active">
+        <div class="pkg-grid pkg-grid-single">
+          <div class="pkg-card">
+            <h4>Трафик и&nbsp;подписка</h4>
+            <div class="pkg-price">600 €<span style="font-size:14px;font-weight:500;color:var(--muted);">/мес</span></div>
+            <p>Настройка и&nbsp;ведение таргета — только на&nbsp;трафик и&nbsp;рост подписчиков.</p>
+          </div>
         </div>
-        <div class="pkg-card">
-          <h4>Полноценный таргет</h4>
-          <div class="pkg-price">800 €<span style="font-size:14px;font-weight:500;color:var(--muted);">/мес</span></div>
-          <p>Разработка стратегий таргетированной рекламы под&nbsp;разные цели.</p>
+        <div class="includes">
+          <div class="includes-label">Что входит</div>
+          <ul>
+            <li>Настройка рекламных кампаний — создание, тестирование, запуск и&nbsp;постоянная оптимизация</li>
+            <li>Техническая поддержка — настройка пикселя и&nbsp;других технических аспектов</li>
+            <li>Анализ результатов и&nbsp;оптимизация</li>
+            <li>Отчёты — еженедельные итоги работы и&nbsp;подробный отчёт в&nbsp;конце месяца</li>
+          </ul>
         </div>
       </div>
 
-      <div class="includes">
-        <div class="includes-label">Полноценный таргет — что&nbsp;входит</div>
-        <ul>
-          <li>Стратегии таргетированной рекламы под&nbsp;разные цели: реклама, ведущая на&nbsp;квиз, на&nbsp;лендинг, на&nbsp;лид-форму — для&nbsp;привлечения лидов на&nbsp;вас лично или&nbsp;на&nbsp;агентство, на&nbsp;регистрацию на&nbsp;мероприятие, на&nbsp;продвигаемый продукт</li>
-          <li>Неограниченное количество статичных креативов по&nbsp;ТЗ, которое составит таргетолог</li>
-          <li>До&nbsp;10 динамических видео и&nbsp;монтаж — если&nbsp;нужны по&nbsp;стратегии таргетированной рекламы</li>
-        </ul>
+      <div data-tab-panel="target-full">
+        <div class="pkg-grid pkg-grid-single">
+          <div class="pkg-card">
+            <h4>Полноценный таргет</h4>
+            <div class="pkg-price">800 €<span style="font-size:14px;font-weight:500;color:var(--muted);">/мес</span></div>
+            <p>Разработка стратегий таргетированной рекламы под&nbsp;разные цели.</p>
+          </div>
+        </div>
+        <div class="includes">
+          <div class="includes-label">Что входит</div>
+          <ul>
+            <li>Разработка стратегии — глубокий анализ ниши, целевой аудитории и&nbsp;конкурентов, с&nbsp;определением ключевых действий для&nbsp;эффективного достижения бизнес-целей</li>
+            <li>Стратегии под&nbsp;разные цели: реклама, ведущая на&nbsp;квиз, на&nbsp;лендинг, на&nbsp;лид-форму — для&nbsp;привлечения лидов на&nbsp;вас лично или&nbsp;на&nbsp;агентство, на&nbsp;регистрацию на&nbsp;мероприятие, на&nbsp;продвигаемый продукт</li>
+            <li>Настройка рекламных кампаний — создание, тестирование, запуск и&nbsp;постоянная оптимизация</li>
+            <li>Создание ТЗ рекламных креативов</li>
+            <li>Неограниченное количество статичных креативов по&nbsp;этому ТЗ</li>
+            <li>До&nbsp;10 динамических видео и&nbsp;монтаж — если&nbsp;нужны по&nbsp;стратегии</li>
+            <li>Техническая поддержка — настройка пикселя и&nbsp;других технических аспектов</li>
+            <li>Анализ результатов и&nbsp;оптимизация</li>
+            <li>Постоянная связь — оперативная поддержка по&nbsp;всем вопросам, связанным с&nbsp;рекламой</li>
+            <li>Отчёты — еженедельные итоги работы и&nbsp;подробный отчёт в&nbsp;конце месяца</li>
+          </ul>
+        </div>
       </div>
 
       <div class="callout">
